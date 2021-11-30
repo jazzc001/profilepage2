@@ -1,4 +1,12 @@
-gsap.registerPlugin(SplitText);
+import * as THREE from '/build/three.module.js';
+import gsap from "gsap";
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+import Draggable from "gsap/Draggable";
+import { gsap, ScrollTrigger, Draggable, MotionPathPlugin } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin, SplitText); 
+
 
 let webgl = {};
 let tail = {};
